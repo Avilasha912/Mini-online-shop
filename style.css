@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.navbar-brand {
+  font-weight: bolder;
+  font-family: "Otomanopee One", sans-serif;
+  letter-spacing: 3px;
+  font-size: 2vw;
+}
+.navbar-brand h3:hover {
+  color: #90999e;
+}
+.nav-item {
+  font-size: large;
+  padding-left: 3vw;
+}
+.form-control {
+  border-radius: 15px;
+  outline: none;
+  border: 2px solid rgb(11, 104, 11);
+}
+.main {
+  background: url(cover.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: 50% 50%;
+  width: 100%;
+}
+.main h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color:white;
+  font-family: "Oswald", sans-serif;
+}
+
+.main h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  opacity: 1;
+  color: #000080;
+  font-family: "Oswald", sans-serif;
+}
+.banner {
+  width: 100%;
+  margin-top: 30px;
+}
+.banner h4 {
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+}
+.banner .container {
+  margin-top: 30px;
+}
+.banner_item-one {
+  background: url(HOODIE.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.banner_item-two {
+  background: url(jeans.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.banner_item-three {
+  background: url(shoes.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.banner_category {
+  height: 50px;
+  background-color: #90999e;
+  opacity: 0.5;
+  min-width: 180px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.banner_category a {
+  display: block;
+  color: #e5e4e2;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  width: 100%;
+  text-decoration: none;
+}
+.banner_category:hover {
+  opacity: 1;
+}
+.community {
+  background: url(creative.jpg) no-repeat;
+  background-size: cover;
+  height: 70vh;
+  background-position: 50% 50%;
+  width: 100%;
+  margin-top: 30px;
+  overflow-x: hidden;
+}
+.community h1 {
+  padding-left: 15px;
+  padding-top: 25px;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #d3d3d3;
+  font-family: "Otomanopee One", sans-serif;
+}
+
+.news {
+  background-color: black;
+  color: white;
+}
+.news p {
+  margin: 0;
+}
+.fs {
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .main h1 {
+    font-size: 3rem;
+  }
+  .main h4 {
+    font-size: 1rem;
+  }
+  .banner_item-one {
+    margin-bottom: 20px;
+  }
+  .banner_item-two {
+    margin-bottom: 20px;
+  }
+}
