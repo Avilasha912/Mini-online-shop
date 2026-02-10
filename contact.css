@@ -1,0 +1,123 @@
+body {
+  background-image: url("contact.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-brand {
+  font-weight: bolder;
+  font-family: "Otomanopee One", sans-serif;
+  letter-spacing: 3px;
+  font-size: 2vw;
+}
+
+.navbar-brand h3:hover {
+  color: #90999e;
+}
+.nav-item {
+  font-size: large;
+  padding-left: 3vw;
+}
+.form-control {
+  border-radius: 15px;
+  outline: none;
+  border: 2px solid rgb(11, 104, 11);
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.9); 
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: auto;
+  padding: 45px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+}
+
+.container h1 {
+  text-align: center;
+  margin: 0 0 40px;
+  padding: 0;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.container input {
+  padding: 5px;
+  margin-bottom: 30px;
+  width: 55%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #999;
+}
+
+.container form div {
+  position: relative;
+}
+.container form div label {
+  position: absolute;
+  top: 3px;
+  pointer-events: none;
+  left: 0;
+  transition: 0.5s;
+}
+
+.container input:focus ~ label,
+.container input:valid ~ label {
+  left: 0;
+  top: -20px;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}
+.container input:focus,
+.container input:valid {
+  border-bottom: 2px solid black;
+}
+.error_form {
+  top: 12px;
+  color: #d80f0f;
+  font-size: 15px;
+  font-family: Helvetica;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    top: 40%;
+  }
+  .container input {
+    padding: 5px;
+    margin-bottom: 30px;
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 350px;
+    overflow-x: hidden;
+    top: 60%;
+  }
+  .container input {
+    padding: 5px;
+    margin-bottom: 30px;
+    width: 35%;
+  }
+}
