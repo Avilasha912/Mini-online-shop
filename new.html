@@ -1,123 +1,476 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Mini Online Shop </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="new.css" />
 
-.navbar-brand {
-  font-weight: bolder;
-  font-family: "Otomanopee One", sans-serif;
-  letter-spacing: 3px;
-  font-size: 2vw;
-}
+    <link
+      href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Mini Online Shop</title>
+  </head>
 
-.navbar-brand h3:hover {
-  color: #90999e;
-}
-.nav-item {
-  font-size: large;
-  padding-left: 3vw;
-}
-.form-control {
-  border-radius: 15px;
-  outline: none;
-  border: 2px solid rgb(11, 104, 11);
-}
-.main {
-  background: url(ntdcover.jpg) no-repeat;
-  opacity: 0.9;
-  background-size: cover;
-  height: 100vh;
-  background-position: 50% 50%;
-  width: 100%;
-}
-.main h1 {
-  padding-top: 280px;
-  text-align: center;
-  font-size: 4rem;
-  font-weight: 700;
-  color: whitesmoke;
-  cursor: pointer;
-  font-family: "Oswald", sans-serif;
-}
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><h3>Mini Online Shop</h3></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" target="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="womens.html" target="#">Womens</a>
+            
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mens.html" target="#">Mens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="new.html">Ethnic</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="sale.html" target="#">Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" target="#">Contact</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa fa-shopping-cart"></i
+              ></a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-.container-fluid h4 {
-  font-family: "Otomanopee One", sans-serif;
-  font-size: 35px;
-  font-weight: 600;
-}
-.container-fluid .item .card img:hover {
-  cursor: pointer;
-}
+    <section class="main">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg mt-5 pt-5">
+            <h1>Nepali Traditional Clothes</h1>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.content {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 88%;
-  color: white;
-  padding: 20px;
-  transition: all 1s;
-}
-.card:hover .content {
-  top: 0;
-  cursor: pointer;
-}
+    <section>
+      <div class="container-fluid">
+        <h4 class="text-center fw-bold display-1 mt-3">EXPLORE</h4>
+        <div class="row mt-3">
+          <div class="owl-carousel owl-theme">
+            <div class="item mb-4">
+              <div class="card border-0 shadow">
+                <img
+                  src="ds.jpg"
+                  alt=""
+                  class="card-img-top"
+                  style="height: 405px"
+                />
+                <div class="content">
+                  <h3>दौरा सुरुवाल
+                  </h3>
+                  <p>
+                    <h5>Product Details</h5>
+                  </p>
+                  <p>
+                    Made with high quality cotton fabric. <br>
+                    Price : Rs 1500 to Rs 3,000
+             
+                  </p>
+                  <button class="btn btn-outline-success" type="submit">
+                    SHOP NOW
+                  </button>
+                </div>
+                <div class="card-body">दौरा सुरुवाल</div>
+              </div>
+            </div>
+          
+            <div class="item mb-4">
+              <div class="card border-0 shadow">
+                <img
+                  src="waistcoat.jpg"
+                  alt=""
+                  class="card-img-top"
+                  style="height: 405px"
+                />
+                <div class="content">
+                  <h3>कोट</h3>
+                  <p>
+                    <h5>Product Details</h5>
+                  </p>
+                  <p>
+                    Made with high quality fabrics  <br>
+                    Available in varity of size and designs
+                    Price : Rs 4000 to Rs 5,000
+             
+                  </p>
+                  <button class="btn btn-outline-success" type="submit">
+                    SHOP NOW
+                  </button>
+                </div>
+                <div class="card-body"> कोट</div>
+              </div>
+            </div>
 
-.box {
-  position: relative;
-  overflow: hidden;
-}
+            <div class="item mb-4">
+              <div class="card border-0 shadow">
+                <img
+                  src="patuka.jpg"
+                  alt=""
+                  class="card-img-top"
+                  style="height: 405px"
+                />
+                <div class="content">
+                  <h3>पटुका</h3>
+                 <p>
+                    <h5>Product Details</h5>
+                  </p>
+                  <p>
+                    Wide Range of Designer Dresses available. <br>
+                    Price : Rs 500 to Rs 1500
+             
+                  </p>
+                  <button class="btn btn-outline-success" type="submit">
+                    SHOP NOW
+                  </button>
+                </div>
+                <div class="card-body">पटुका</div>
+              </div>
+            </div>
 
-.grid {
-  width: 90%;
-  margin: 20px auto;
-}
-.grid .tag h4 {
-  font-family: "Otomanopee One", sans-serif;
-  font-size: 35px;
-  font-weight: 600;
-}
+            <div class="item mb-4">
+              <div class="card border-0 shadow">
+                <img
+                  src="topi.jpg"
+                  alt=""
+                  class="card-img-top"
+                  style="height: 405px"
+                />
+                <div class="content">
+                  <h3>भादगाउँले टोपी</h3>
+                 <p>
+                    <h5>Product Details</h5>
+                  </p>
+                  <p>
+                    Wide Variety of leather hats available. <br>
+                    Price : Rs 100 to Rs 600
+             
+                  </p>
+                  <button class="btn btn-outline-success" type="submit">
+                    SHOP NOW
+                  </button>
+                </div>
+                <div class="card-body">भादगाउँले टोपी</div>
+              </div>
+            </div>
+            <div class="item mb-4">
+              <div class="card border-0 shadow">
+                <img
+                  src="topi1.jpg"
+                  alt=""
+                  class="card-img-top"
+                  style="height: 405px"
+                />
+                <div class="content">
+                  <h3>ढाका टोपी</h3>
+                  <p>
+                    <h5>Product Details</h5>
+                  </p>
+                  <p>
+                    Made with pure cotton fabric. <br>
+                    Price : Rs 100 to Rs 500
+             
+                  </p>
+                  <button class="btn btn-outline-success" type="submit">
+                    SHOP NOW
+                  </button>
+                </div>
+                <div class="card-body">ढाका टोपी</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.content-two {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: -100%;
-  width: 100%;
-  left: 0;
-  height: 100%;
-  color: white;
-  padding: 20px;
-  box-sizing: border-box;
-  transition: all 1s;
-}
-.box:hover .content-two {
-  top: 0;
-  cursor: pointer;
-}
+    <div class="grid">
+      <div class="tag mb-3 text-center"><h4>Ready To Put On</h4></div>
+      <div class="row mb-3">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <div class="box mb-3">
+            <img
+              src="cgd.jpg"
+              class="w-100 shadow-1-strong"
+              alt=""
+            />
+            <div class="content-two">
+              <h3>Cultural Gurung Dress- Gunyo</h3>
+              <button class="btn btn-outline-success" type="submit">
+                SHOP NOW
+              </button>
+            </div>
+          </div>
 
-.grid .content-two h3 {
-  font-family: "Oswald", sans-serif;
-  text-align: center;
-  font-weight: 600;
-}
-.grid .content-two button {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-top: 15%;
-}
+          <div class="box mb-3">
+            <img
+              src="bcd.jpg"
+              class="w-100 shadow-1-strong"
+              alt=""
+            />
+            <div class="content-two">
+              <h3>Cultural Bahun dress - Gunyo Cholo</h3>
+              <button class="btn btn-outline-success" type="submit">
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+        </div>
 
-.news {
-  background-color: black;
-  color: white;
-}
-.news p {
-  margin: 0;
-}
-.fs {
-  font-size: 2.5rem;
-  cursor: pointer;
-  padding-right: 10px;
-}
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="box mb-3">
+            <img
+              src="ncd.jpg"
+              height="800px"
+              class="w-100 shadow-1-strong"
+              alt=""
+            />
+            <div class="content-two">
+              <h3>Cultural Newar dress - Haku Patasi</h3>
+              <button class="btn btn-outline-success" type="submit">
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+
+          <div class="box mb-3">
+            <img
+              src="ccd.jpg"
+              class="w-100 shadow-1-strong"
+              alt=""
+            />
+            <div class="content-two">
+              <h3>Cultural Chhetri Dress- Saree</h3>
+              <button class="btn btn-outline-success" type="submit">
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="box mb-3">
+            <img
+              src="rcd.jpg"
+              class="w-100 shadow-1-strong"
+              alt=""
+            />
+            <div class="content-two">
+              <h3> Cultural Rai Dress- Dhaka Chaubandi Cholo </h3>
+              <button class="btn btn-outline-success" type="submit">
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+          <div class="box mb-3">
+            <img
+              src="tcd.jpg"
+              class="w-100 shadow-1-strong"
+              alt=""
+            />
+            <div class="content-two">
+              <h3>Cultural Tharu Dress- Choli</h3>
+              <button class="btn btn-outline-success" type="submit">
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center text-lg-start bg-dark text-muted">
+      <section
+        class="
+          d-flex
+          justify-content-center justify-content-lg-between
+          p-4
+          border-bottom
+        "
+      >
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+
+        <div>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Mini Online Shop</h6>
+              <p>
+                Clothing Store Providing Top Quality Products Since 2015.<br />
+                Quality is our priority.
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="mens.html" class="text-reset">Mens Fashion</a>
+              </p>
+              <p>
+                <a href="womens.html" class="text-reset">Womens Fashion</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Accessories</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Quick links</h6>
+              <p>
+                <a href="index.html" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a href="womens.html" class="text-reset">Womens</a>
+              </p>
+              <p>
+                <a href="mens.html" class="text-reset">Mens</a>
+              </p>
+              
+              <p>
+                <a href="new.html" class="text-reset">Ethnic</a>
+              </p>
+              <p>
+                <a href="sale.html" class="text-reset">Sale</a>
+              </p>
+              <p>
+                <a href="contact.html" class="text-reset">Contact</a>
+              </p>
+              
+              
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fa fa-home me-3"></i> Gaurighat, Kathmandu</p>
+              <p>
+                <i class="fa fa-envelope me-3"></i>
+                avilashamanandhar@gmail.com
+              </p>
+              <p><i class="fa fa-phone me-3"></i> 9851007918</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2025 Copyright:
+        <a class="text-reset fw-bold" href="#">Avilasha Manandhar</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
