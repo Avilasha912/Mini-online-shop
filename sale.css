@@ -120,3 +120,18 @@
     letter-spacing: 1rem;
   }
 }
+.product-price {
+  color: #d9534f;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.btn-success {
+  background-color: rgb(11, 104, 11);
+  border-color: rgb(11, 104, 11);
+}
+
+.btn-success:hover {
+  background-color: rgb(8, 80, 8);
+  border-color: rgb(8, 80, 8);
+}
