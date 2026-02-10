@@ -32,10 +32,16 @@ function viewCart() {
 }
 
 function removeFromCart(index) {
+    cart = JSON.parse(localStorage.getItem('cart')) || [];
     if (index >= 0 && index < cart.length) {
         const removed = cart.splice(index, 1);
         localStorage.setItem('cart', JSON.stringify(cart));
         console.log(`${removed[0].name} removed from cart`);
+        
+        // Refresh cart display if on cart page
+        if (typeof displayCart === 'function') {
+            displayCart();
+        }
     }
 }
 
@@ -43,4 +49,9 @@ function clearCart() {
     cart = [];
     localStorage.setItem('cart', JSON.stringify(cart));
     console.log('Cart cleared');
+    
+    // Refresh cart display if on cart page
+    if (typeof displayCart === 'function') {
+        displayCart();
+    }
 }
